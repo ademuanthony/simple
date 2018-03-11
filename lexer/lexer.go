@@ -80,6 +80,15 @@ func (l *Lexer) NextToken() token.Token {
 		tok = newToken(token.LBRACE, l.ch)
 	case '}':
 		tok = newToken(token.RBRACE, l.ch)
+	case '"':
+		tok.Type = token.STRING
+		tok.Literal = l.readString()
+	case '[':
+		tok = newToken(token.LBRACKET, l.ch)
+	case ']':
+		tok = newToken(token.RBRACKET, l.ch)
+	case ':':
+		tok = newToken(token.COLON, l.ch)
 	case 0:
 		tok.Literal = ""
 		tok.Type = token.EOF
@@ -105,6 +114,18 @@ func (l *Lexer) skipWhitespace() {
 		l.readChar()
 	}
 }
+
+func (l *Lexer) readString() string {
+	position := l.position + 1
+	for {
+		l.readChar()
+		if l.ch == '"' || l.ch == 0 {
+			break
+		}
+	}
+	return l.input[position:l.position]
+}
+
 
 // readIdentifier take the first character if it is a letter and that follows if they are as well
 func (l *Lexer) readIdentifier() string {

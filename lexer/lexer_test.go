@@ -6,9 +6,9 @@ import (
 )
 
 func TestNextToken(t *testing.T) {
-	input := `let five = 5; let ten = 10;
-			let add = fn(x, y) { x + y; };
-			let result = add(five, ten);
+	input := `var five = 5; var ten = 10;
+			var add = fn(x, y) { x + y; };
+			var result = add(five, ten);
 			!-/*5;
 			5 < 10 > 5;
 			if (5 < 10) {
@@ -19,6 +19,10 @@ func TestNextToken(t *testing.T) {
 
 			10 == 10;
 			 10 != 9;
+			 "foobar"
+			 "foo bar"
+			 [1, 2];
+			{"foo": "bar"}
 			`
 
 
@@ -26,17 +30,17 @@ func TestNextToken(t *testing.T) {
 		expectedType token.TokenType
 		expectedLiteral string
 	}{
-		{token.LET, "let"},
+		{token.VAR, "var"},
 		{token.IDENT, "five"},
 		{token.ASSIGN, "="},
 		{token.INT, "5"},
 		{token.SEMICOLON, ";"},
-		{token.LET, "let"},
+		{token.VAR, "var"},
 		{token.IDENT, "ten"},
 		{token.ASSIGN, "="},
 		{token.INT, "10"},
 		{token.SEMICOLON, ";"},
-		{token.LET, "let"},
+		{token.VAR, "var"},
 		{token.IDENT, "add"},
 		{token.ASSIGN, "="},
 		{token.FUNCTION, "fn"},
@@ -52,7 +56,7 @@ func TestNextToken(t *testing.T) {
 		{token.SEMICOLON, ";"},
 		{token.RBRACE, "}"},
 		{token.SEMICOLON, ";"},
-		{token.LET, "let"},
+		{token.VAR, "var"},
 		{token.IDENT, "result"},
 		{token.ASSIGN, "="},
 		{token.IDENT, "add"},
@@ -99,6 +103,21 @@ func TestNextToken(t *testing.T) {
 		{token.NOT_EQ, "!="},
 		{token.INT, "9"},
 		{token.SEMICOLON, ";"},
+		{token.STRING, "foobar"},
+		{token.STRING, "foo bar"},
+		{token.LBRACKET, "["},
+		{token.INT, "1"},
+		{token.COMMA, ","},
+		{token.INT, "2"},
+		{token.RBRACKET, "]"},
+		{token.SEMICOLON, ";"},
+		{token.LBRACE, "{"},
+		{token.STRING, "foo"},
+		{token.COLON, ":"},
+		{token.STRING, "bar"},
+		{token.RBRACE, "}"},
+		{token.EOF, ""},
+
 		{token.EOF, ""},
 
 	}
