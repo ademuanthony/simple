@@ -3,7 +3,7 @@ package object
 import (
 	"fmt"
 	"strings"
-	"bitbucket.org/laverita/enyo/ast"
+	"github.com/ademuanthony/simple/ast"
 	"bytes"
 	"hash/fnv"
 )

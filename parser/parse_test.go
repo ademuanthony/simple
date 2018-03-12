@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"bitbucket.org/laverita/enyo/lexer"
+	"github.com/ademuanthony/simple/lexer"
 	"testing"
-	"bitbucket.org/laverita/enyo/ast"
+	"github.com/ademuanthony/simple/ast"
 	"fmt"
 )
 
@@ -22,8 +22,8 @@ func checkParserErrors(t *testing.T, p *Parser) {
 }
 
 func testLetStatement(t *testing.T, s ast.Statement, name string) bool {
-	if s.TokenLiteral() != "let" {
-		t.Errorf("s.TokenLiteral not 'let'. got=%q", s.TokenLiteral())
+	if s.TokenLiteral() != "var" {
+		t.Errorf("s.TokenLiteral not 'var'. got=%q", s.TokenLiteral())
 		return false
 	}
 	letStmt, ok := s.(*ast.LetStatement)
@@ -48,9 +48,9 @@ func TestLetStatements(t *testing.T) {
 		expectedIdentifier string
 		expectedValue interface{}
 	}{
-		{"let x = 5;", "x", 5},
-		{"let y = true;", "y", true},
-		{"let foobar = y;", "foobar", "y"},
+		{"var x = 5;", "x", 5},
+		{"var y = true;", "y", true},
+		{"var foobar = y;", "foobar", "y"},
 	}
 	for _, tt := range tests {
 		l := lexer.New(tt.input)

@@ -1,10 +1,10 @@
 package evaluator
 
 import (
-	"bitbucket.org/laverita/enyo/object"
-	"bitbucket.org/laverita/enyo/lexer"
+	"github.com/ademuanthony/simple/object"
+	"github.com/ademuanthony/simple/lexer"
 	"testing"
-	"bitbucket.org/laverita/enyo/parser"
+	"github.com/ademuanthony/simple/parser"
 )
 
 func TestEvalIntegerExpression(t *testing.T) {

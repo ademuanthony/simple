@@ -1,0 +1,19 @@
+printLn("Please enter the principal");
+var p = parseInt(readLn());
+
+printLn("Please enter the interest rate");
+var r = parseInt(readLn());
+
+printLn("Please enter the time");
+var t = parseInt(readLn());
+
+var simepleInterest = fn(p, t, r) {
+    return (p*t*r)/100
+}
+
+var i = simepleInterest(p, t, r);
+
+print("The interest is ", i);
+
+printLn("Thanks");
+

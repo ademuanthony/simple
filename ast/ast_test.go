@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"bitbucket.org/laverita/enyo/token"
+	"github.com/ademuanthony/simple/token"
 	"testing"
 )
 

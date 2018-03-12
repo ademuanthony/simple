@@ -1,6 +1,6 @@
 package lexer
 
-import "bitbucket.org/laverita/enyo/token"
+import "github.com/ademuanthony/simple/token"
 
 type Lexer struct {
 	input string

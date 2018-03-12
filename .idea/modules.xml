@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/enyo.iml" filepath="$PROJECT_DIR$/enyo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/simple.iml" filepath="$PROJECT_DIR$/.idea/simple.iml" />
     </modules>
   </component>
 </project>

@@ -2,7 +2,7 @@ package lexer
 
 import (
 	"testing"
-	"bitbucket.org/laverita/enyo/token"
+	"github.com/ademuanthony/simple/token"
 )
 
 func TestNextToken(t *testing.T) {

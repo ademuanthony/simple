@@ -1,9 +1,9 @@
 package parser
 
 import (
-	"bitbucket.org/laverita/enyo/lexer"
-	"bitbucket.org/laverita/enyo/token"
-	"bitbucket.org/laverita/enyo/ast"
+	"github.com/ademuanthony/simple/lexer"
+	"github.com/ademuanthony/simple/token"
+	"github.com/ademuanthony/simple/ast"
 	"fmt"
 	"strconv"
 )

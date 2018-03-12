@@ -1,8 +1,12 @@
 package evaluator
 
 import (
-	"bitbucket.org/laverita/enyo/object"
+	"github.com/ademuanthony/simple/object"
 	"fmt"
+	"bufio"
+	"os"
+	"strconv"
+	"strings"
 )
 
 var builtins = map[string]*object.Builtin{
@@ -96,7 +100,7 @@ var builtins = map[string]*object.Builtin{
 			return &object.Array{Elements: newElements}
 		},
 	},
-	"puts": &object.Builtin{
+	"printLn": &object.Builtin{
 		Fn: func(args ...object.Object) object.Object {
 			for _, arg := range args {
 				fmt.Println(arg.Inspect())
@@ -104,4 +108,55 @@ var builtins = map[string]*object.Builtin{
 			return NULL
 		},
 	},
+	"print": &object.Builtin{
+		Fn: func(args ...object.Object) object.Object {
+			for _, arg := range args {
+				fmt.Print(arg.Inspect())
+			}
+			return NULL
+		},
+	},
+	"readLn": &object.Builtin{
+		Fn: func(args ...object.Object) object.Object {
+			input, err := read()
+			if err != nil {
+				return err
+			}
+			println("You entered " + input)
+			return &object.String{Value:input}
+		},
+	},
+	"parseInt": &object.Builtin{
+		Fn: func(args ...object.Object) object.Object {
+			if len(args) != 1 {
+				return newError("wrong number of arguments. got=%d, want=1",
+					len(args))
+			}
+			if args[0].Type() != object.STRING_OBJ {
+				return newError("argument to `parseint` must be STRING, got %s",
+					args[0].Type())
+			}
+			input := args[0].(*object.String)
+			number, err := strconv.ParseInt(input.Value, 10, 64)
+			if err != nil{
+				return newError("invalid number format")
+			}
+
+			return &object.Integer{Value:number}
+		},
+	},
+}
+
+func read() (string, *object.Error) {
+	reader := bufio.NewReader(os.Stdin)
+	fmt.Printf(">> ")
+
+	text, err := reader.ReadString('\n')
+	text = strings.Replace(text, "\n", "", -1)
+
+	if err != nil {
+		return "", newError("Simply ran into some issues here")
+	}
+
+	return text, nil
 }

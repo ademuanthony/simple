@@ -1,9 +1,9 @@
 package evaluator
 
 import (
-	"bitbucket.org/laverita/enyo/object"
-	"bitbucket.org/laverita/enyo/ast"
-	"bitbucket.org/laverita/enyo/token"
+	"github.com/ademuanthony/simple/object"
+	"github.com/ademuanthony/simple/ast"
+	"github.com/ademuanthony/simple/token"
 	"fmt"
 )
 

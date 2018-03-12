@@ -3,8 +3,8 @@ package main
 import (
 	"os/user"
 	"fmt"
-	"bitbucket.org/laverita/enyo/repl"
 	"os"
+	"github.com/ademuanthony/simple/repl"
 )
 
 func main() {
