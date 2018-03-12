@@ -26,7 +26,23 @@
 * Quick summary: Simple is a programming language i am working on for educational purpose 
 * Version : 1.0.0
 
+### Building the interpreter ###
+You can build the interpreter for your platform. 
+intall and setup the go programming language.
+run:
+```text
+go get github.com/ademuanthony/simple 
+cd $GOPATH/src/github.com/ademuanthony/simple 
+go build 
+go install
+```
 ### How to run your code ###
+Open yous command line, type
+```text
+simple
+```
+and press enter 
+
 You can write your code directly in the simple console and have evaluated on the fly 
 
 Or you can run your .sim file by typing

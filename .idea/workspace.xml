@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9131817b-3ee8-47e9-af04-5b1b9cf675fe" name="Default" comment="" />
+    <list default="true" id="9131817b-3ee8-47e9-af04-5b1b9cf675fe" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/simple" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +19,8 @@
       <file leaf-file-name="repl.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/repl/repl.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="51" column="4" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="51" selection-end-column="4" />
+            <state relative-caret-position="324">
+              <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
               <folding>
                 <element signature="e#14#240#0" expanded="true" />
               </folding>
@@ -28,19 +32,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <first_editor relative-caret-position="306">
+                <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
                 <folding>
-                  <element signature="e#3081#3451#0" expanded="false" />
-                  <marker date="1520825824888" expanded="true" signature="2754:2947" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="2786:2920" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="2815:2845" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="2851:2914" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="2967:3024" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="3334:3360" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="3500:3573" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="3516:3533" ph="{...}" />
-                  <marker date="1520825824888" expanded="true" signature="3537:3571" ph="{...}" />
+                  <element signature="e#3400#3770#0" expanded="false" />
+                  <marker date="1520828803208" expanded="true" signature="3073:3266" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3105:3239" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3134:3164" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3170:3233" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3286:3343" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3653:3679" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3819:3892" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3835:3852" ph="{...}" />
+                  <marker date="1520828803208" expanded="true" signature="3856:3890" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -139,7 +143,6 @@
         <option value="$PROJECT_DIR$/eg.sim" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/parser/parser.go" />
-        <option value="$PROJECT_DIR$/repl/repl.go" />
         <option value="$PROJECT_DIR$/object/object.go" />
         <option value="$PROJECT_DIR$/ast/ast.go" />
         <option value="$PROJECT_DIR$/evaluator/evaluator.go" />
@@ -153,6 +156,7 @@
         <option value="$PROJECT_DIR$/evaluator/builtins.go" />
         <option value="$PROJECT_DIR$/sim/factorial.sim" />
         <option value="$PROJECT_DIR$/sim/si.sim" />
+        <option value="$PROJECT_DIR$/repl/repl.go" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -215,6 +219,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="add_unversioned_files" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -816,6 +821,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added signature to simple" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added signature to simple" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -1393,8 +1402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/repl/repl.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="51" column="4" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="51" selection-end-column="4" />
+        <state relative-caret-position="324">
+          <caret line="40" column="20" lean-forward="true" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
           <folding>
             <element signature="e#14#240#0" expanded="true" />
           </folding>
@@ -1404,19 +1413,19 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="396">
-            <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <first_editor relative-caret-position="306">
+            <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
             <folding>
-              <element signature="e#3081#3451#0" expanded="false" />
-              <marker date="1520825824888" expanded="true" signature="2754:2947" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="2786:2920" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="2815:2845" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="2851:2914" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="2967:3024" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="3334:3360" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="3500:3573" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="3516:3533" ph="{...}" />
-              <marker date="1520825824888" expanded="true" signature="3537:3571" ph="{...}" />
+              <element signature="e#3400#3770#0" expanded="false" />
+              <marker date="1520828803208" expanded="true" signature="3073:3266" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3105:3239" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3134:3164" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3170:3233" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3286:3343" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3653:3679" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3819:3892" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3835:3852" ph="{...}" />
+              <marker date="1520828803208" expanded="true" signature="3856:3890" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
