@@ -1,0 +1,9 @@
+var factorial = fn(n){
+    if(n == 1){
+        n
+    }else{
+        n * factorial(n-1)
+    }
+}
+
+printLn("The factorial of", 20, "is", factorial(20));
