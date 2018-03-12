@@ -36,6 +36,7 @@ cd $GOPATH/src/github.com/ademuanthony/simple
 go build 
 go install
 ```
+You can also download the windows version from https://drive.google.com/file/d/1WWv2DD7Dwb4Rj4GHDhgIGG4bLsSdg5gb/view?usp=sharing and and the location to enviroment veriable 
 ### How to run your code ###
 Open yous command line, type
 ```text
