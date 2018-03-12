@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9131817b-3ee8-47e9-af04-5b1b9cf675fe" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/evaluator/builtins.go" afterPath="$PROJECT_DIR$/evaluator/builtins.go" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/sim/factorial.sim">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <caret line="8" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -51,31 +50,22 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="504">
-                <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-                <folding />
+              <first_editor relative-caret-position="432">
+                <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+                <folding>
+                  <element signature="e#3058#3428#0" expanded="false" />
+                  <marker date="1520825334628" expanded="true" signature="2731:2924" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="2763:2897" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="2792:2822" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="2828:2891" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="2944:3001" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="3311:3337" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="3477:3550" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="3493:3510" ph="{...}" />
+                  <marker date="1520825334628" expanded="true" signature="3514:3548" ph="{...}" />
+                </folding>
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lexer_test.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lexer/lexer_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="35" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evaluator_test.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluator/evaluator_test.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -105,8 +95,8 @@
       <file leaf-file-name="si.sim" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sim/si.sim">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="270">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -169,7 +159,6 @@
         <option value="$PROJECT_DIR$/object/object_test.go" />
         <option value="$PROJECT_DIR$/a.sim.js" />
         <option value="$PROJECT_DIR$/eg.sim" />
-        <option value="$PROJECT_DIR$/sim/si.sim" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/parser/parser.go" />
         <option value="$PROJECT_DIR$/repl/repl.go" />
@@ -185,6 +174,7 @@
         <option value="$PROJECT_DIR$/sim/eg.sim" />
         <option value="$PROJECT_DIR$/evaluator/builtins.go" />
         <option value="$PROJECT_DIR$/sim/factorial.sim" />
+        <option value="$PROJECT_DIR$/sim/si.sim" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -1389,14 +1379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sim/si.sim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/builtins.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1405,14 +1387,6 @@
             <element signature="e#19#114#0" expanded="true" />
             <element signature="e#2216#2703#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sim/factorial.sim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1434,12 +1408,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sim/si.sim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sim/factorial.sim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="504">
-            <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-            <folding />
+          <first_editor relative-caret-position="432">
+            <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <folding>
+              <element signature="e#3058#3428#0" expanded="false" />
+              <marker date="1520825334628" expanded="true" signature="2731:2924" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="2763:2897" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="2792:2822" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="2828:2891" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="2944:3001" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="3311:3337" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="3477:3550" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="3493:3510" ph="{...}" />
+              <marker date="1520825334628" expanded="true" signature="3514:3548" ph="{...}" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
