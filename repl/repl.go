@@ -14,7 +14,7 @@ import (
 	"errors"
 )
 
-const PROMPT = ">> "
+const PROMPT = "simple> "
 
 const MONKEY_FACEc = `
 			    __,__
